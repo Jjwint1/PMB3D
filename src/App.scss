@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fffaf0;
+//  background: rgb(16, 16, 17);
+  font-family: Lato;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  font-family: Montserrat;
+  font-size: 85px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: black;
+  text-shadow: 2px 2px 20px black;
+}
+
+.pmb {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.year {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .pmb {
+    font-size: 60px;
+  }
+
+  .year {
+    font-size: 60px;
+  }
+}
